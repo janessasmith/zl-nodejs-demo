@@ -1,0 +1,23 @@
+{{#extend "stylesheets"}}
+	<link rel="stylesheet" type="text/css" href="/stylesheets/components/top.css">
+{{/extend}}
+
+<header class="am-topbar ch-topbar">
+	<div class="ch-container">
+		<div class="am-collapse am-topbar-collapse">
+			<ul class="am-nav am-nav-pills am-topbar-nav am-text-xs ch-nav">
+				<li class="am-active ch-nav-active">
+            <a href="{{content.leftHref}}">{{content.leftTitle}}</a>
+          </li>
+			</ul>
+			<div class="am-topbar-right am-text-xs ch-topbar-right">
+          <div class="am-fl am-margin-right-sm">
+            <a href="{{content.loginLink}}">{{content.loginTitle}}</a>
+          </div>
+          <div class="am-fl am-margin-right-sm">
+            <a href="{{content.registerLink}}">{{content.registerTitle}}</a>
+          </div>
+        </div>
+		</div>
+	</div>
+</header>

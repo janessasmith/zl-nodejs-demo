@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- 在IE运行最新的渲染模式 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="{{description}}">
+    <meta name="keywords" content="{{keywords}}">
+
+    <!-- 初始化移动端浏览显示，让网页的宽度适应设备的宽度和禁止窗口缩放 -->
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">-->
+    <title>{{title}}</title>
+
+    <!-- 指定360使用webkit引擎渲染 -->
+    <meta name="renderer" content="webkit">
+
+    <!-- 禁止百度移动搜索转码 -->
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+
+    <!-- 引入CSS -->
+    {{#block "stylesheets"}}
+    <link rel="stylesheet" type="text/css" href="{{this}}">
+    {{/block}}
+  </head>
+  <body>
+    {{{body}}}
+
+    <!-- 引入JS -->
+    {{#block "script"}}
+    <script type="text/javascript" src="{{this}}"></script>
+    {{/block}}
+  </body>
+</html>

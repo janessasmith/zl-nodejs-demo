@@ -1,0 +1,31 @@
+{{#extend "stylesheets"}}
+	<link rel="stylesheet" type="text/css" href="/stylesheets/components/navigator.css">
+{{/extend}}
+
+
+{{#extend "script"}}
+    <script type="text/javascript" src="/javascripts/components/navigator.js"></script>
+{{/extend}}
+
+<div class="am-padding-horizontal-0 ch-header">
+    <div class="ch-container">
+      {{! 这个注释不会显示在输出结果中 }}
+    	{{#if content}}
+      <div class="am-u-sm-3 am-padding-0">
+        <img src="{{logoSrc}}" width="239" height="78" alt="{{alt}}"/>
+      </div>
+      <div class="am-u-sm-9 am-padding-0">
+        <ul class="am-fr am-nav am-nav-pills ch-nav">
+          {{#each content.nav}}
+          <li>
+            <a href="{{navHref}}">
+              <span class="{{navIconClass}}"></span>
+              {{{navContent}}}
+            </a>
+          </li>
+          {{/each}}
+        </ul>
+      </div>
+      {{/if}}
+    </div>
+  </div>
