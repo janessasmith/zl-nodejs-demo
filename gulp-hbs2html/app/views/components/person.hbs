@@ -1,0 +1,19 @@
+<div class="perbox">
+	<ul>
+	    {{#each name}}
+	        <li>{{this}}</li>
+	    {{/each}}
+	</ul>
+	<h2>下面是一些书籍列表</h2>
+	<ul>
+	    {{#each book}}
+	        <li>
+	        	<span>{{this.name}}</span>
+	        	<span>{{this.author}}</span>
+	        	<span>{{this.time}}</span>
+	        	<a href="{{this.href}}">打开书籍链接</a>
+	        </li>
+	    {{/each}}
+	</ul>
+	{{> footbanner}}
+</div>

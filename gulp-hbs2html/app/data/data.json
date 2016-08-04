@@ -1,0 +1,20 @@
+{
+  "name" : ["张三","李四","王二","彭五"],
+  "sex":"男",
+  "book":[{
+  		"name":"那些年",
+  		"author":"semo",
+  		"time":"1992-03-09",
+  		"href":"http:baidu.com"
+  	},{
+  		"name":"那些年2",
+  		"author":"西西2",
+  		"time":"1992-03-09",
+  		"href":"http:sina.com"
+  	},{
+  		"name":"那些年3",
+  		"author":"西西3",
+  		"time":"1992-03-09",
+  		"href":"http:google.com"
+  	}]
+}
